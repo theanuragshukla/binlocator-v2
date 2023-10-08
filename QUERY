@@ -1,0 +1,8 @@
+CREATE TABLE users (
+  "id" serial not null,
+  "name" varchar(100),
+  "email" varchar(200),
+  "pass" text,
+  "uid" varchar(16),
+  "creation" timestamp default current_timestamp,
+  "updated" timestamp default current_timestamp);

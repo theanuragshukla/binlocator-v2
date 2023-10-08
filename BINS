@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS bins
+(
+  "id" serial not null,
+    loc point NOT NULL,
+  "uid" varchar(16),
+  "added_by" varchar(16)
+    votes integer NOT NULL DEFAULT 1,
+    CONSTRAINT bins_pkey PRIMARY KEY (uid)
+);
