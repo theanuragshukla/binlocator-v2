@@ -1,5 +1,5 @@
 # NOTE
-### The Project binlocator-v1 was awarded first prize in the below mentioned hackathon. After almost a year, I'm trying to improve the usability by removing the bugs, impreoving existing features and adding new ones. Because of a completely new repository, all the previous deployments will not be updated anymore. From now on, the only live link is [https://binlocator.anurags.tech](https://binlocator.anurags.tech)
+### The Project binlocator-v1 was awarded first prize in the below mentioned hackathon. After almost a year, I'm trying to improve the usability by removing the bugs, improving existing features and adding new ones. Because of a completely new repository, all the previous deployments will not be updated anymore. From now on, the only live link is [https://binlocator.anurags.tech](https://binlocator.anurags.tech)
 
 
 # Video Demo Link
