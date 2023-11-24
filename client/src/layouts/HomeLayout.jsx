@@ -5,7 +5,7 @@ import Navbar from "../common/Navbar";
 
 export default function HomeLayout() {
     return (
-        <Grid h="100vh" templateRows="60px 1fr 56px" bg="green">
+        <Grid h="100vh" templateRows="60px 1fr 56px" >
         <Navbar/>
             <GridItem h="100%" w="100%" overflow="hidden">
                 <Outlet />

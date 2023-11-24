@@ -6,6 +6,7 @@ import CustomTextField from "../../../common/CustomTextFeld";
 import { Link, useNavigate } from "react-router-dom";
 import { signup } from "../../../data/managers/account";
 import { useState } from "react";
+import binLoc from "../../../../public/Images/binLoc.svg";
 
 export default function Signup() {
     const navigate = useNavigate();
@@ -67,17 +68,25 @@ export default function Signup() {
         onSubmit: handleSubmit,
     });
     return (
+        <Flex justifyContent="center" alignItems="center"  height="90vh"
+        >
+            <Flex
+                boxShadow='dark-lg'
+                width={{base:'95vw',sm:'55vw'}}
+                height={{base:"80%",lg:"60%"}}
+
+            >
         <Flex
-            justify="flex-start"
-            alignItems={{ base: "flex-start" }}
+            justify="center"
+            alignItems="start"
+            paddingLeft={50}
             flexDir="column"
-            pt={24}
-            px={8}
-            gap={4}
+            // gap={4}
             bg="whiteAlpha.900"
             h="100%"
+            width="80%"
         >
-            <Heading>Create an Account</Heading>
+            <Heading py={5}>Create your Account</Heading>
             <CustomTextField
                 formik={formik}
                 name="firstName"
@@ -118,16 +127,42 @@ export default function Signup() {
             />
             <Text>
                 Already have an account?
-                <Link to={ROUTES.LOGIN}>Login here</Link>
+                <Link to={ROUTES.LOGIN} style={{fontWeight:"700"}}>Login here</Link>
             </Text>
             <Button
                 isLoading={loading}
                 loadingText="Please Wait..."
                 onClick={formik.handleSubmit}
                 colorScheme="green"
+                marginY={5}
+                padding={3}
             >
                 Signup
             </Button>
+             </Flex>
+
+                <Flex
+                    justify="center"
+                    bg="green.500"
+                    h="100%"
+                    width="30%"
+                >
+                    <Flex
+                        justify="center"
+                        position="relative"
+                        right="55%"
+                        sx={{display:{base:"none",lg:"flex"}}}
+
+
+                    >
+                        <img  width={1000} height={1000} src={binLoc}/>
+                    </Flex>
+
+
+                </Flex>
+
+            </Flex>
         </Flex>
+
     );
 }
